@@ -3,7 +3,9 @@
         <div class="col-md-8">
             <div *ngFor="let quote of sortQuotes let i= index">
                 <p>{{quote.title}}</p>
-        
+                <app-quotes-details *ngIf='quote' bind-voting='quote' (isRead)='quoteDelete($event,i)'>
+                </app-quotes-details>
+               
               </div>
         </div>
     </div>
