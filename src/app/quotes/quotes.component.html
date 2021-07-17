@@ -1,1 +1,11 @@
-<p>quotes works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div *ngFor="let quote of sortQuotes let i= index">
+                <p>{{quote.title}}</p>
+        
+              </div>
+        </div>
+    </div>
+</div>
+
